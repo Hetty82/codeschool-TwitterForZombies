@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @zombie.name
+%p
+  %b Bio:
+  = @zombie.bio
+%p
+  %b Age:
+  = @zombie.age
+= link_to 'Edit', edit_zombie_path(@zombie)
+|
+\#{link_to 'Back', zombies_path}
